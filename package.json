@@ -1,0 +1,35 @@
+{
+  "name": "lunds-lounge",
+  "version": "1.0.0",
+  "description": "Lunds Lounge",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && npm audit && ava",
+    "test-offline": "standard && ava",
+    "coverage": "nyc ava",
+    "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
+    "standard-fix": "standard --fix",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "deploy": "npm test && now --prod",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
+  },
+  "author": "Geir Gåsodden <geir.gasodden@pythonia.no> (https://github.com/zrrrzzt)",
+  "license": "MIT",
+  "dependencies": {
+    "knuth-shuffle": "1.0.8",
+    "next": "9.4.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "ava": "3.7.0",
+    "coveralls": "3.0.11",
+    "nyc": "15.0.1",
+    "standard": "14.3.3"
+  },
+  "engines": {
+    "node": ">= 12.16.3"
+  }
+}
