@@ -24,10 +24,10 @@
     "react-dom": "16.13.1"
   },
   "devDependencies": {
-    "ava": "3.7.0",
-    "coveralls": "3.0.11",
+    "ava": "3.8.2",
+    "coveralls": "3.1.0",
     "nyc": "15.0.1",
-    "standard": "14.3.3"
+    "standard": "14.3.4"
   },
   "engines": {
     "node": ">= 12.16.3"
