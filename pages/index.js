@@ -33,7 +33,8 @@ const Index = () => {
           h1 {
             color: red;
             font-family: 'American Typewriter';
-            font-size: 50px;
+            font-size: 70px;
+            transform: rotate(9deg);
           }
           button {
             font-weight: 500;
