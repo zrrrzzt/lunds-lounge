@@ -1,6 +1,6 @@
 {
   "name": "lunds-lounge",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Lunds Lounge",
   "main": "index.js",
   "scripts": {
