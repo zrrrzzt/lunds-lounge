@@ -59,6 +59,10 @@ const Index = () => {
           .fortune-box {
             font-size: 36px;
             padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 420Px;
           }
           .wrapper {
             text-align: center;
