@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import RingLoader from 'react-spinners/RingLoader'
 import Player from '../lib/player'
 const shuffle = require('knuth-shuffle').knuthShuffle
 const songs = require('../lib/songs.json')
@@ -10,6 +11,7 @@ function getSong () {
 
 const Index = () => {
   const [song, setSong] = useState(getSong())
+  const [showSpinner, setShowSpinner] = useState(true)
 
   const handleClick = () => {
     setSong(getSong())
@@ -19,7 +21,8 @@ const Index = () => {
     <div className='wrapper'>
       <h1>Lunds Lounge</h1>
       <div className='fortune-box'>
-        <Player song={song} />
+        <RingLoader color='red' size='300px' loading={showSpinner} />
+        <Player song={song} setShowSpinner={setShowSpinner} />
       </div>
       <p>
         <button onClick={handleClick}>Play me another</button>
